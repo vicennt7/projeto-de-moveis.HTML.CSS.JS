@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Conta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-c">
+      <h1>Cadastro</h1>
+      <img src="imagens/logosite.jpg" alt="Logo do site" class="logosite" /> 
+    </div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="cadastro.html">Criar Conta</a>
+      <button onclick="logout()">Sair</button>
+    </nav>  
+    
+  </header>
+
+  <main>
+    <form id="formCadastro">
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" required><br><br>
+
+      <label for="senha">Senha:</label><br>
+      <input type="password" id="senha" required><br><br>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </main>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Loja de Móveis</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo-c">
+      <h1>FURNITURE STORE</h1>
+      <img src="imagens/logosite.jpg" alt="Logo do site" class="logosite" /> 
+    </div>
+    <nav> 
+      <div class="menu-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+        <a href="cadastro.html">Criar conta</a>
+        <a href="#" id="carrinho-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="carrinho-contador">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <div id="carrinho-sidebar">
+    <div class="carrinho-header">
+      <h3>Seu Carrinho</h3>
+      <button id="fechar-carrinho">&times;</button>
+    </div>
+    <div id="carrinho-items">
+      <!-- Items do carrinho serão adicionados aqui -->
+    </div>
+    <div class="carrinho-total">
+      <p>Total: R$ <span id="carrinho-valor-total">0,00</span></p>
+      <button id="finalizar-compra">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>Somos uma loja especializada em móveis planejados e de qualidade.</p>
+    </section>
+
+    <section id="produtos">
+      <h2>Nossos Produtos</h2>
+      <div class="produto">
+        <img src="imagens/sofá moderno.webp" alt="Sofá moderno">
+        <h3>Sofá Moderno</h3>
+        <p>3 lugares</p>
+        <p>R$ 1.200,00</p>
+        <button class="adicionar-carrinho" data-preco="1200.00" data-nome="Sofá Moderno">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="imagens/mesa 6 cadeiras.jpg" alt="Mesa de jantar">
+        <h3>Mesa de Jantar</h3>
+        <p>6 lugares</p>
+        <p>R$ 900,00</p>
+        <button class="adicionar-carrinho" data-preco="900.00" data-nome="Mesa de Jantar">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="imagens/cadeira-escritorio.jpg" alt="Cadeira de Escritório">
+        <h3>Cadeira de Escritório</h3>
+        <p>Ergonômica</p>
+        <p>R$ 450,00</p>
+        <button class="adicionar-carrinho" data-preco="450.00" data-nome="Cadeira de Escritório">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="imagens/cama-queen.png" alt="Cama Queen">
+        <h3>Cama Queen</h3>
+        <p>Com cabeceira</p>
+        <p>R$ 1.500,00</p>
+        <button class="adicionar-carrinho" data-preco="1500.00" data-nome="Cama Queen">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="imagens/rack-tv.png" alt="Rack para TV">
+        <h3>Rack para TV</h3>
+        <p>Moderno</p>
+        <p>R$ 350,00</p>
+        <button class="adicionar-carrinho" data-preco="350.00" data-nome="Rack para TV">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="imagens/guarda-roupa6.png" alt="Guarda-Roupa">
+        <h3>Guarda-Roupa</h3>
+        <p>6 portas</p>
+        <p>R$ 2.200,00</p>
+        <button class="adicionar-carrinho" data-preco="2200.00" data-nome="Guarda-Roupa">Adicionar ao Carrinho</button>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Fale Conosco</h2>
+      <button onclick="mostrarAlerta()">Clique para entrar em contato</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Móveis Estilo</p>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
